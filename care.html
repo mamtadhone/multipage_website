@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipage Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="banner-image">
+        <div class="banner-name">First Smile</div>
+        <div class="baby-image">
+          <img src=".\images\baby.png" alt="baby_image" />
+        </div>
+      </div>
+      <nav class="navigations">
+        <a href="index.html">Home</a>
+        <a href="toys.html">Toys</a>
+        <a href="boys.html">Boy fashion</a>
+        <a href="girls.html">Girl fashion</a>
+        <a href="bath.html">Bath</a>
+        <a href="care.html">Care</a>
+        <a href="other.html">Other</a>
+      </nav>
+    </header>
+    <main>
+      <aside class="care-aside aside">
+        <div>Filters</div>
+        <ul>
+          <li>
+            <details>
+              <summary>Age group</summary>
+              <div class="checkbox-content">
+                <label for="age"
+                  ><input type="checkbox" name="age" value="0-1" /> 0 - 1</label
+                >
+              </div>
+              <div class="checkbox-content">
+                <label for="age"
+                  ><input type="checkbox" name="age" value="1-3" /> 1 - 3</label
+                >
+              </div>
+              <div class="checkbox-content">
+                <label for="age"
+                  ><input type="checkbox" name="age" value="3-6" /> 3 - 6</label
+                >
+              </div>
+            </details>
+          </li>
+
+          <li>
+            <details>
+              <summary>price</summary>
+              <div class="checkbox-content">
+                <label for="price"
+                  ><input type="checkbox" name="price" value="20" />under
+                  £20</label
+                >
+              </div>
+              <div class="checkbox-content">
+                <label for="price"
+                  ><input type="checkbox" name="price" value="20-100" />£20 -
+                  £100</label
+                >
+              </div>
+              <div class="checkbox-content">
+                <label for="price"
+                  ><input type="checkbox" name="price" value="100" /> above
+                  £100</label
+                >
+              </div>
+            </details>
+          </li>
+        </ul>
+        <button class="apply">Apply</button>
+      </aside>
+
+      <section class="care-products products">
+        <div>
+          <img src=".\images\care\care1.png" alt="care" />
+        </div>
+        <div>
+          <img src=".\images\care\care2.png" alt="care" />
+        </div>
+        <div>
+          <img src=".\images\care\care3.jpg" alt="care" />
+        </div>
+        <div>
+          <img src=".\images\care\care4.png" alt="care" />
+        </div>
+        <div>
+          <img src=".\images\care\care5.png" alt="care" />
+        </div>
+        <div>
+          <img src=".\images\care\care6.png" alt="care" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
