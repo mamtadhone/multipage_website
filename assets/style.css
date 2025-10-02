@@ -1,6 +1,7 @@
 body{
     text-align: center;
     margin: 0 auto;
+    font-style: italic;
 }
 
 
@@ -8,25 +9,29 @@ main{
     background-color: #ddc3bb;
     position: relative;
     width: 100%;
-    height: 1400px;
+    display: flex;
 }
 main img{
     height: 300px;
     border-radius: 10px;
 }
 
-main img:hover{
+.products img:hover{
     transform: scale(1.1);
+    box-shadow: 0px 0px 25px 8px #0a0133;
+}
+
+.trending-products.products{
+    width: 100%;
 }
 
 .products{
-    position: absolute;
     width: 80%;
-    right: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    gap: 20px;
 }
 
 .products img{
@@ -34,18 +39,47 @@ main img:hover{
     height: 300px;
     border: 2px solid black;
     margin-top: 90px;
+    box-shadow: 25px 25px 35px -5px #000000;
+}
+
+main button{
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #1b0f51;
+    color: white;
+    border-radius: 5%;
+    font-style: italic;
+    padding: 5px;
+}
+main button:hover{
+    transform: scale(1.1);
+    background-color: #ad92df;
+    color: black;
+    box-shadow: 7px 7px 0 0 #21094e;
+}
+
+.products .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .aside{
-    left: 0;
-    width: 20%;
-    position: absolute;
-    border: 2px solid black;
+    text-align: left;
+    padding-left: 65px;
+    width: 12%;
+    margin-top: 90px;
 }
 
 
 .aside ul{
     list-style-type: none;
+    font-size: 20px;
+}
+
+.aside .filters{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .checkbox-content{
@@ -60,25 +94,26 @@ main img:hover{
     height: 500px;
     background-size: cover;
     background-position: -2px -148px;
+        display: flex
+;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .banner-name{
     font-size: 85px;
     font-weight: bold;
-    position: absolute;
-    top: 21%;
-    left: 40%;
+    color: #0c0433;
+    text-shadow: 160px 75px 4px #ae828aa3;
+    font-family: cursive;
 }
 
 .baby-image img{
     height: 300px;
     width: 300px;
-    position: absolute;
-    right: 10%;
-    top: 10%;
     border-radius: 30%;
     border: 3px solid grey;
-    box-shadow: 0px 0px 52px 13px #000000;
+    box-shadow: 0px 0px 58px 13px #090325;
 }
 
 nav{   display: flex;
@@ -100,11 +135,16 @@ nav{   display: flex;
 
 .navigations a:hover{
     transform: scale(1.1);
+    background-color: #ad92df;
+    color: black;
+    box-shadow: 7px 7px 0 0 #21094e;
 }
 
 .trending-heading{
-    font-size: 35px;
+    font-size: 38px;
+    color: #430443;
     padding-top: 50px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
