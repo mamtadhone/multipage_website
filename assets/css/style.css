@@ -1,3 +1,11 @@
+:root {
+  --button-bg-color: #141454;
+  --text-color: #000000;
+  --table-border-color: #dddddd;
+  --header-bg-color: #f1f1f1;
+  --header-text-color: #333333;
+}
+
 body {
   text-align: center;
   margin: 0 auto;
@@ -44,7 +52,7 @@ main img {
 main button {
   font-size: 14px;
   font-weight: bold;
-  background-color: #1b0f51;
+  background-color: var(--button-bg-color);
   color: white;
   border-radius: 10%;
   font-style: italic;
@@ -55,7 +63,7 @@ main button:hover {
   transform: scale(1.1);
   background-color: #ad92df;
   color: black;
-  box-shadow: 7px 7px 0 0 #21094e;
+  box-shadow: 7px 7px 0 0 #141454;
   cursor: pointer;
 }
 
@@ -69,7 +77,7 @@ main button:hover {
   text-align: left;
   padding-left: 95px;
   width: 12%;
-  box-shadow: -13px 20px 18px 0px #0a0133;
+  box-shadow: -10px 0px 18px 0px #0a0133;
 }
 
 .aside ul {
@@ -122,6 +130,17 @@ main button:hover {
   box-shadow: 0px 0px 58px 13px #090325;
 }
 
+.cart {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.cart img {
+  width: 100px;
+  height: 100px;
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -144,7 +163,7 @@ nav {
   transform: scale(1.1);
   background-color: #ad92df;
   color: black;
-  box-shadow: 7px 7px 0 0 #21094e;
+  box-shadow: 7px 7px 0 0 #141454;
   cursor: pointer;
 }
 
