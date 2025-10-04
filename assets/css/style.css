@@ -1,9 +1,8 @@
 /* *********************** CSS Variables ********************** */
 
 :root {
-  --button-bg-color: #141454;
   --black-color: #000000;
-  --blue-color: #141454;
+  --blue-color: #0c0433;
   --display-flex: flex;
   --font-20: 20px;
 }
@@ -56,7 +55,7 @@ main img {
 main button {
   font-size: 14px;
   font-weight: bold;
-  background-color: var(--button-bg-color);
+  background-color: var(--blue-color);
   color: white;
   border-radius: 10%;
   font-style: italic;
@@ -119,7 +118,7 @@ main button:hover {
 .banner-name {
   font-size: 85px;
   font-weight: bold;
-  color: #0c0433;
+  color: var(--blue-color);
   text-shadow: 160px 75px 4px #ae828aa3;
   font-family: cursive;
 }
@@ -154,7 +153,7 @@ nav {
 
 .navigations a {
   padding: 15px 15px;
-  background-color: var(--black-color);
+  background-color: var(--blue-color);
   text-decoration: none;
   color: white;
   font-size: var(--font-20);
@@ -217,6 +216,12 @@ nav {
 .form-elements textarea::placeholder {
   color: #bb969e;
   font-style: italic;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 10px 1px var(--blue-color);
+  cursor: pointer;
 }
 
 .content section img {
